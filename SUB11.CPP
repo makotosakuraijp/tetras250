@@ -3,9 +3,9 @@
 TETRAS98_MAIN_ONE1::TETRAS98_MAIN_ONE1 (void)
 {
 	keydata [0].setup (KEY_A, KEY_L,HIDARI, TEN_4);
-	keydata [1].setup (KEY_D, COLON,  MIGI, TEN_6);
-	keydata [2].setup (KEY_X, SLASH,  SITA, TEN_2);
-	keydata [3].setup (KEY_S,SEMI_C,    CR, TEN_5);
+	keydata [1].setup (KEY_D, KORON,  MIGI, TEN_6);
+	keydata [2].setup (KEY_X,SURUSH,  SITA, TEN_2);
+	keydata [3].setup (KEY_S,SEMI_K,    CR, TEN_5);
 }
 
 #pragma warn -pia
@@ -88,7 +88,7 @@ void TETRAS98_MAIN_ONE::go (void)
 
 	KEY k;
 	player = new TETRAS98_MAIN_ONE1;
-	// mfxddn_bgm_play_mtlib ("X.MUD");
+	mfxddn_bgm_play_mtlib ("X_MAS.MUD");
 
 	player->mv.change (3, 20, bman [bmg], 1, 2);
 	player->mv.enter ();
@@ -106,7 +106,7 @@ void TETRAS98_MAIN_ONE::go (void)
 		mus_wait++;
 		mus_wait %= 10000;
 		//if (mus_wait == 0 && mfxddn_get_playstatus () != 0)
-		//	mfxddn_bgm_play_mtlib ("X.MUD");
+		//	mfxddn_bgm_play_mtlib ("X_MAS.MUD");
 		bottom = player->search (k);
 		if (counter == 65535L)
 			counter = 0;
@@ -152,5 +152,5 @@ void TETRAS98_MAIN_ONE::go (void)
 			}
 		}
 	}
-	// mfxddn_bgm_fadeout (2);
+	mfxddn_bgm_fadeout (2);
 }

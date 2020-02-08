@@ -3,9 +3,9 @@
 TETRAS98_MAIN_TWO1::TETRAS98_MAIN_TWO1 (void)
 {
 	keydata [0].setup (KEY_A, KEY_A, KEY_L, KEY_L);
-	keydata [1].setup (KEY_D, KEY_D, COLON, COLON);
-	keydata [2].setup (KEY_X, KEY_X, SLASH, SLASH);
-	keydata [3].setup (KEY_S, KEY_S,SEMI_C,SEMI_C);
+	keydata [1].setup (KEY_D, KEY_D, KORON, KORON);
+	keydata [2].setup (KEY_X, KEY_X,SURUSH,SURUSH);
+	keydata [3].setup (KEY_S, KEY_S,SEMI_K,SEMI_K);
 }
 
 TETRAS98_MAIN_TWO2::TETRAS98_MAIN_TWO2 (void)

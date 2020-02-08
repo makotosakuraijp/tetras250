@@ -142,7 +142,7 @@ int erase (BLOCK_LIST *bl, int player, int mode)
 			{
 				bl->blist [place [0]] = bl->blist [place [0] + 2];
 				//bl->blist [place [1]] = bl->blist [place [1] + 2];
-				for (i = place [0] + 4; i <= 37; i++) //一行上をコメントアウトして、5を4にした。
+				for (i = place [0] + 4; i <= 37; i++)
 					bl->blist [i - 3] = bl->blist [i];
 			}
 			bl->blist [35] = 0;

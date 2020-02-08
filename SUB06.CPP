@@ -36,7 +36,7 @@ int MOVER::can_put (BLOCK_LIST a, MOVER b)
 {
 	//オーバーラップするかどうかで、
 	//オーバーラップしないと真、
-	//オーバーラップすると偽を返す。
+	//オーバーラップすると疑を返す。
 	XY k [4];
 	block_data (k, b.bfnt);
 	int g [4];

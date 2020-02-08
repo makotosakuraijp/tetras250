@@ -28,7 +28,7 @@ STATUS_LIST::STATUS_LIST (STATUS *a, STATUS *b, STATUS *c, STATUS *d)
 	r [2] = c;
 	r [3] = d;
 
-	// mfxddn_bgm_play_mtlib ("setup.mud");
+	mfxddn_bgm_play_mtlib ("setup.mud");
 	cu = 0;
 	a -> went ();
 	it.box (41, 15, 120, 31, _BLUE, _GREEN);
@@ -88,7 +88,7 @@ void STATUS_LIST::go (void)
 			}
 		}
 
-		// mfxddn_bgm_fadeout (1);
+		mfxddn_bgm_fadeout (1);
 
 		if (cu != 3)
 		{
@@ -109,7 +109,7 @@ void STATUS_LIST::go (void)
 			it.box (0, 7, 639, 39, _BLUE);
 			it.box (1, 8, 638, 38, _GREEN);
 			it.box (41, 15, 120, 31, _BLUE, _GREEN);
-			// mfxddn_bgm_play_mtlib ("setup.mud");
+			mfxddn_bgm_play_mtlib ("setup.mud");
 			r = 0;
 			cu = 0;
 			move (0);

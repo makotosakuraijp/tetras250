@@ -26,7 +26,7 @@ void logo (void)
 		ptr = (char *) FPADD (ptr, mag.xsize / 2);
 	}
 	mag_free (&mag, buf);
-    // mfxddn_bgm_play_mtlib ("IFLOGO.MUD");
+    mfxddn_bgm_play_mtlib ("IFLOGO.MUD");
 	palette_black_in (6);
 	for (i = 0; i < 90; i++)
 		vsync_wait ();

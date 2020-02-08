@@ -22,10 +22,10 @@ void title (void)
 	}
 	mag_free (&mag, buf);
 
-	// mfxddn_bgm_play ("UEHR.MUD");
-	// mfxddn_bgm_play_mtlib ("UEHR.MUD");
+	//mfxddn_bgm_play ("UEHR.MUD");
+	mfxddn_bgm_play_mtlib ("UEHR.MUD");
 	for (k.key (); k.t [SPACE] == 0; k.key ()){}
-	// mfxddn_bgm_fadeout (2);
+	mfxddn_bgm_fadeout (2);
 
 	palette_set_all (bak);
 }

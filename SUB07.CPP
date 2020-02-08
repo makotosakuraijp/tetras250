@@ -30,9 +30,9 @@ TETRAS98_MAIN_THREE1::TETRAS98_MAIN_THREE1 (void)
 TETRAS98_MAIN_THREE2::TETRAS98_MAIN_THREE2 (void)
 {
 	keydata [0].setup (KEY_L, KEY_L, KEY_L, KEY_L);
-	keydata [1].setup (COLON, COLON, COLON, COLON);
-	keydata [2].setup (SLASH, SLASH, SLASH, SLASH);
-	keydata [3].setup (SEMI_C,SEMI_C,SEMI_C,SEMI_C);
+	keydata [1].setup (KORON, KORON, KORON, KORON);
+	keydata [2].setup (SURUSH,SURUSH,SURUSH,SURUSH);
+	keydata [3].setup (SEMI_K,SEMI_K,SEMI_K,SEMI_K);
 }
 
 TETRAS98_MAIN_THREE3::TETRAS98_MAIN_THREE3 (void)

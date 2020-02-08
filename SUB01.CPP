@@ -16,8 +16,8 @@ TETRAS98::TETRAS98 (void)
 	text_clear ();
 	key_beep_off ();
 	//vsync_start ();
-	// musicbuf = new char [MFXDDN_MAXMUDSIZE];
-	// mfxddn_bgm_init2 (musicbuf);
+	musicbuf = new char [MFXDDN_MAXMUDSIZE];
+	mfxddn_bgm_init2 (musicbuf);
 	gaiji_entry_bfnt ("CHARACT.BFT");
 	logo (); //logo内では、自前でMACHINE変数を用意する。
 	title ();

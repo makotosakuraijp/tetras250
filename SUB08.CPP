@@ -44,7 +44,7 @@ void TETRAS98_MAIN_THREE::go (void)
 	player [0] = new TETRAS98_MAIN_THREE1;
 	player [1] = new TETRAS98_MAIN_THREE2;
 	player [2] = new TETRAS98_MAIN_THREE3;
-	// mfxddn_bgm_play_mtlib ("X.MUD");
+	mfxddn_bgm_play_mtlib ("X_MAS.MUD");
 
 	player [0]->mv.change (3, 20, bman [bmg [0]], 1, 3);
 	player [1]->mv.change (3, 20, bman [bmg [1]], 2, 3);
@@ -72,7 +72,7 @@ void TETRAS98_MAIN_THREE::go (void)
 		mus_wait++;
 		mus_wait %= 10000;
 		//if (mus_wait == 0 && mfxddn_get_playstatus () != 0)
-		//	mfxddn_bgm_play_mtlib ("X.MUD");
+		//	mfxddn_bgm_play_mtlib ("X_MAS.MUD");
 		bottom [0] = player [0]->search (k);
 		bottom [1] = player [1]->search (k);
 		bottom [2] = player [2]->search (k);
@@ -135,5 +135,5 @@ void TETRAS98_MAIN_THREE::go (void)
 		if (player [0]->arrival + player [1]->arrival + player [2]->arrival <= 1)
 			quit = 0;
 	}
-	// mfxddn_bgm_fadeout (2);
+	mfxddn_bgm_fadeout (2);
 }

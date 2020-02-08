@@ -126,7 +126,7 @@ void RECORD_LIST::save (char *filename) //デフォルトの値でソコアファイルを作る。
 	if (!file_create (filename))
 	{
 		printf ("ファイルが書き込めません。\n");
-		printf ("異常終了します。\n");
+		printf ("以上終了します。\n");
 		exit (2);
 	}
 
@@ -156,7 +156,7 @@ void RECORD_LIST::save (char *filename, RECORD_LIST *a)
 	if (!file_create (filename))
 	{
 		printf ("ファイルが書き込めません。\n");
-		printf ("異常終了します。\n");
+		printf ("以上終了します。\n");
 		exit (2);
 	}
 
